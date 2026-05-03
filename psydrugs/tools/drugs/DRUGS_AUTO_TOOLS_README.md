@@ -1,0 +1,217 @@
+# Drugs 自动处理工具
+
+本目录包含用于自动处理药物（Drugs）相关内容的Python脚本。
+
+## 脚本说明
+
+### 1. `auto_drugs.py` - 综合自动处理脚本（推荐使用）
+
+这是主要的自动化脚本，执行所有drugs相关的维护任务。
+
+**功能:**
+- 统计drugs文件数量
+- 验证所有drugs文件的front-matter
+- 自动生成/更新 `drugs.yml` 配置文件
+- 提供下一步建议
+
+**使用方法:**
+```bash
+python3 tools/drugs/auto_drugs.py
+```
+
+**输出示例:**
+- 显示当前drugs文件统计
+- 验证结果
+- 更新配置文件
+- 完成摘要
+
+---
+
+### 2. `generate_drugs_yml.py` - 生成drugs.yml配置
+
+自动扫描 `source/drugs/` 目录中的所有 Markdown 文件，并生成完整的 `drugs.yml` 配置。
+
+**功能:**
+- 扫描所有.md文件（排除new-page模板）
+- 按字母顺序排序
+- 自动备份原配置文件
+- 更新树状导航结构
+
+**使用方法:**
+```bash
+python3 tools/drugs/generate_drugs_yml.py
+```
+
+**生成的配置结构:**
+```yaml
+tree:
+  '导论':
+    - introduction-to-overdose
+    - /
+    - index
+  '所有药物':
+    - ACL
+    - ADD
+    - AES
+    - ... (所有药物)
+```
+
+---
+
+### 3. `validate_drugs.py` - 验证drugs文件完整性
+
+验证所有drugs文件是否具有正确的front-matter元数据。
+
+**功能:**
+- 检查所有drugs文件的YAML front-matter
+- 识别缺少front-matter的文件
+- 自动为缺少front-matter的文件添加基础元数据
+- 生成验证报告
+
+**使用方法:**
+```bash
+python3 tools/drugs/validate_drugs.py
+```
+
+**输出示例:**
+```
+=== Drugs 文件验证报告 ===
+总文件数: 56
+已有front-matter: 56
+缺少front-matter: 0
+新增front-matter: 0
+
+✓ 所有drugs文件验证完毕，无问题
+```
+
+---
+
+## 快速开始
+
+### 一键执行所有处理
+
+```bash
+python3 tools/drugs/auto_drugs.py
+```
+
+### 单独执行特定任务
+
+1. **仅验证文件:**
+  ```bash
+  python3 tools/drugs/validate_drugs.py
+  ```
+
+2. **仅更新配置:**
+  ```bash
+  python3 tools/drugs/generate_drugs_yml.py
+  ```
+
+---
+
+## 工作流程
+
+### 添加新药物文件后
+
+1. 在 `source/drugs/` 目录中创建新的 `.md` 文件
+2. 运行 `python3 tools/drugs/auto_drugs.py` 自动处理
+3. 运行 `hexo generate` 重新生成静态网站
+4. 验证效果
+
+### 修改现有药物信息后
+
+1. 编辑相应的 `.md` 文件
+2. 运行 `python3 tools/drugs/auto_drugs.py`（如果修改了文件名或front-matter）
+3. 运行 `hexo server` 查看本地效果
+
+---
+
+## 配置文件位置
+
+| 文件 | 位置 | 说明 |
+|------|------|------|
+| drugs配置 | `source/_data/wiki/drugs.yml` | 定义drugs导航结构 |
+| drugs文件 | `source/drugs/*.md` | 各个药物的详细文档 |
+| 备份 | `source/_data/wiki/drugs.yml.backup` | 自动备份的原配置 |
+
+---
+
+## 文件要求
+
+### drugs文件格式
+
+每个drugs文件应包含YAML front-matter:
+
+```markdown
+---
+title: 药物名称
+description: 简短描述
+published: true
+date: 2024-01-30T11:16:42.000Z
+tags: 
+  - 标签1
+  - 标签2
+editor: markdown
+updated: 2024-01-30T11:16:42.000Z
+---
+
+# 药物名称
+
+详细内容...
+```
+
+---
+
+## 故障排查
+
+### 问题：脚本找不到文件
+**解决:** 确保在项目根目录运行脚本
+```bash
+cd /home/krvy/Psydrugs.icu
+python3 auto_drugs.py
+```
+
+### 问题：drugs.yml没有更新
+**解决:** 
+1. 检查 `source/drugs/` 中是否有新文件
+2. 确保文件名以 `.md` 结尾
+3. 手动删除备份重试：`rm source/_data/wiki/drugs.yml.backup`
+
+### 问题：网站不显示新药物
+**解决:**
+1. 运行 `hexo clean` 清理缓存
+2. 运行 `hexo generate` 重新生成
+3. 运行 `hexo server` 本地预览
+
+---
+
+## 后续建议
+
+- ✅ 自动化已完成，所有drugs文件和配置已更新
+- 📝 建议定期运行 `auto_drugs.py` 保持配置最新
+- 🔄 考虑添加到CI/CD流程中自动执行
+- 📦 可扩展支持其他内容模块（如combination, recovery等）
+
+---
+
+## 技术细节
+
+### 脚本依赖
+- Python 3.6+
+- 标准库: `os`, `re`, `subprocess`, `datetime`
+- 无第三方依赖
+
+### 执行流程
+1. 扫描 `source/drugs/` 目录
+2. 提取所有 `.md` 文件名
+3. 验证front-matter完整性
+4. 生成YAML配置
+5. 备份并覆盖原配置文件
+
+---
+
+## 作者信息
+
+- 自动化脚本创建于: 2026-01-22
+- 项目: Psydrugs.icu
+- 目的: 简化drugs内容管理
+

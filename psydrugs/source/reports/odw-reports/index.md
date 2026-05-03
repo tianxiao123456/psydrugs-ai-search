@@ -1,0 +1,143 @@
+---
+wiki: reports
+title: 药物过量应急报告
+menu_id: reports
+date: 2024-01-01 12:00:00
+updated: 2024-06-15 18:30:00
+---
+
+## 药物过量应急报告
+
+本栏目收录了药物过量的紧急处理指南和用户报告，包括症状识别、急救措施、真实案例和康复经验。
+
+---
+
+## 📚 用户报告大全
+
+以下是来自用户的真实报告和经历分享，共 156 个报告，按数字顺序排列：
+
+### 报告 0-19
+
+| 编号 | 标题 | 编号 | 标题 |
+|------|------|------|------|
+| [报告 0](/reports/odw-reports/RP-0/) | 散装报告 | [报告 10](/reports/odw-reports/RP-10/) | 酒后虐待，拉明致死 |
+| [报告 1](/reports/odw-reports/RP-1/) | 茶氨酸 | [报告 11](/reports/odw-reports/RP-11/) | 神秘佐匹克隆 |
+| [报告 2](/reports/odw-reports/RP-2/) | 右美沙芬第五高原 | [报告 12](/reports/odw-reports/RP-12/) | 茶氨酸与白兔 |
+| [报告 3](/reports/odw-reports/RP-3/) | 多个药物 | [报告 13](/reports/odw-reports/RP-13/) | 奇怪的右美沙芬 |
+| [报告 4](/reports/odw-reports/RP-4/) | 金刚烷胺 | [报告 14](/reports/odw-reports/RP-14/) | 思诺光错 |
+| [报告 5](/reports/odw-reports/RP-5/) | 多个药物 | [报告 15](/reports/odw-reports/RP-15/) | 复方晚安 |
+| [报告 6](/reports/odw-reports/RP-6/) | 一次普瑞巴林，一次金刚烷胺 | [报告 16](/reports/odw-reports/RP-16/) | 反解离失效 |
+| [报告 7](/reports/odw-reports/RP-7/) | 个人trip整合 | [报告 17](/reports/odw-reports/RP-17/) | 优米与普瑞的音乐剧 |
+| [报告 8](/reports/odw-reports/RP-8/) | 过量利培酮的噩梦 | [报告 18](/reports/odw-reports/RP-18/) | 可以当个教训放report里吗 |
+| [报告 9](/reports/odw-reports/RP-9/) | 在苯海拉明死亡前 | [报告 19](/reports/odw-reports/RP-19/) | 解离已死，不属于我 |
+
+### 报告 20-39
+
+| 编号 | 标题 | 编号 | 标题 |
+|------|------|------|------|
+| [报告 20](/reports/odw-reports/RP-20/) | 余晖的记忆恢复 | [报告 30](/reports/odw-reports/RP-30/) | 普瑞巴氯思诺癫痫体验 |
+| [报告 21](/reports/odw-reports/RP-21/) | 苏糖酸镁 | [报告 31](/reports/odw-reports/RP-31/) | 2t普瑞就这样 |
+| [报告 22](/reports/odw-reports/RP-22/) | 唑吡坦 | [报告 32](/reports/odw-reports/RP-32/) | 普瑞巴林它把我逼到了自殺的地步 |
+| [报告 23](/reports/odw-reports/RP-23/) | 思诺思与普瑞导致的严重断片 | [报告 33](/reports/odw-reports/RP-33/) | 右美右美金刚烷胺 |
+| [报告 24](/reports/odw-reports/RP-24/) | 第一次吃金刚烷胺 | [报告 34](/reports/odw-reports/RP-34/) | 普瑞巴林对我来说丝毫没有od的价值 |
+| [报告 25](/reports/odw-reports/RP-25/) | 解离最狠的一集 | [报告 35](/reports/odw-reports/RP-35/) | 长路漫漫 |
+| [报告 26](/reports/odw-reports/RP-26/) | 司来苯乙胺 | [报告 36](/reports/odw-reports/RP-36/) | 苏糖酸镁 |
+| [报告 27](/reports/odw-reports/RP-27/) | 医用剂量苯海索 | [报告 37](/reports/odw-reports/RP-37/) | 散装唑吡坦 |
+| [报告 28](/reports/odw-reports/RP-28/) | 氟西汀和右美沙芬普瑞巴林导致严重颤抖乃至血清素综合征边缘 | [报告 38](/reports/odw-reports/RP-38/) | 完全不合理的死不掉的自杀术 |
+| [报告 29](/reports/odw-reports/RP-29/) | 普瑞巴氯芬 | [报告 39](/reports/odw-reports/RP-39/) | 这些药毁了我，我是说该死 |
+
+### 报告 40-59
+
+| 编号 | 标题 | 编号 | 标题 |
+|------|------|------|------|
+| [报告 40](/reports/odw-reports/RP-40/) | 睡眠缩短 | [报告 50](/reports/odw-reports/RP-50/) | 个人报告 |
+| [报告 41](/reports/odw-reports/RP-41/) | 普瑞巴林戒断 | [报告 51](/reports/odw-reports/RP-51/) | 报告49与报告50的事情 |
+| [报告 42](/reports/odw-reports/RP-42/) | 化与化学的旅行 | [报告 52](/reports/odw-reports/RP-52/) | 统计 |
+| [报告 43](/reports/odw-reports/RP-43/) | 几乎蠕动着请求帮助 | [报告 53](/reports/odw-reports/RP-53/) | 普瑞梦游 |
+| [报告 44](/reports/odw-reports/RP-44/) | 茶氨酸 | [报告 54](/reports/odw-reports/RP-54/) | 小畜生苯海索 |
+| [报告 45](/reports/odw-reports/RP-45/) | 重症抑鬱的初次od | [报告 55](/reports/odw-reports/RP-55/) | 盐酸异丙嗪药效实验 |
+| [报告 46](/reports/odw-reports/RP-46/) | 卡洛的报告 | [报告 56](/reports/odw-reports/RP-56/) | 20t上四五之间高原的2D6慢速代谢者 |
+| [报告 47](/reports/odw-reports/RP-47/) | 金刚烷胺之梦 | [报告 57](/reports/odw-reports/RP-57/) | 神神又秘秘的神秘药物 |
+| [报告 48](/reports/odw-reports/RP-48/) | 燃烧的庙宇，满山的烟花；荒坟的祭拜，过往的跳崖 | [报告 58](/reports/odw-reports/RP-58/) | 于是od把我给杀死了（已故） |
+| [报告 49](/reports/odw-reports/RP-49/) | 个人报告整合（已故） | [报告 59](/reports/odw-reports/RP-59/) | RP-59 |
+
+### 报告 60-79
+
+| 编号 | 标题 | 编号 | 标题 |
+|------|------|------|------|
+| [报告 60](/reports/odw-reports/RP-60/) | 右美沙芬的内部幻觉 | [报告 70](/reports/odw-reports/RP-70/) | 60t苯巴比妥东莨菪碱 |
+| [报告 61](/reports/odw-reports/RP-61/) | 晚安打61 | [报告 71](/reports/odw-reports/RP-71/) | 超级普瑞 |
+| [报告 62](/reports/odw-reports/RP-62/) | 苏糖酸镁也要玩USAS-12 | [报告 72](/reports/odw-reports/RP-72/) | 苯海拉明右美沙芬的瀕死體驗 |
+| [报告 63](/reports/odw-reports/RP-63/) | 太阳神普瑞巴氯芬 | [报告 73](/reports/odw-reports/RP-73/) | 右美的认知影响 |
+| [报告 64](/reports/odw-reports/RP-64/) | 过量晚安 | [报告 74](/reports/odw-reports/RP-74/) | 稍尽春风 |
+| [报告 65](/reports/odw-reports/RP-65/) | 弥漫于空中的自己 | [报告 75](/reports/odw-reports/RP-75/) | 警示一下想學我用od逃避現實的無知孩子們 |
+| [报告 66](/reports/odw-reports/RP-66/) | 第五高原予知 | [报告 76](/reports/odw-reports/RP-76/) | 这是诱拐他人od |
+| [报告 67](/reports/odw-reports/RP-67/) | 第一次o就到四高了 | [报告 77](/reports/odw-reports/RP-77/) | 神秘药物与各种药物的冒险 |
+| [报告 68](/reports/odw-reports/RP-68/) | 我擦好吃啊😭 | [报告 78](/reports/odw-reports/RP-78/) | 氟西汀快把右美甩到第五高原了 |
+| [报告 69](/reports/odw-reports/RP-69/) | 第一次o右美 | [报告 79](/reports/odw-reports/RP-79/) | 梦境中的死后世界 |
+
+### 报告 80-99
+
+| 编号 | 标题 | 编号 | 标题 |
+|------|------|------|------|
+| [报告 80](/reports/odw-reports/RP-80/) | 打80一定要保证空腹多喝水 | [报告 90](/reports/odw-reports/RP-90/) | 我就选择把仅剩的180多片右美沙芬全o了 |
+| [报告 81](/reports/odw-reports/RP-81/) | Kanna的第一次DXM之旅 | [报告 91](/reports/odw-reports/RP-91/) | 自杀一整瓶美金刚+30t晚安 |
+| [报告 82](/reports/odw-reports/RP-82/) | 重焦中抑第一次o80 | [报告 92](/reports/odw-reports/RP-92/) | 13味精神科药物当饭吃可恶大夫 |
+| [报告 83](/reports/odw-reports/RP-83/) | 优米对认知的篡改有多可怕 | [报告 93](/reports/odw-reports/RP-93/) | 我的人生到底是从哪里开始变了样子了 |
+| [报告 84](/reports/odw-reports/RP-84/) | 一种余晖 | [报告 94](/reports/odw-reports/RP-94/) | 杭州深夜梦游少女 |
+| [报告 85](/reports/odw-reports/RP-85/) | 整篇文章都是我在ICU里写的 | [报告 95](/reports/odw-reports/RP-95/) | 极点 |
+| [报告 86](/reports/odw-reports/RP-86/) | 小畜生苯海索2 | [报告 96](/reports/odw-reports/RP-96/) | 杭州深夜失足少女 |
+| [报告 87](/reports/odw-reports/RP-87/) | 奈福泮的奇妙外幻 | [报告 97](/reports/odw-reports/RP-97/) | 医学伦理学分析 |
+| [报告 88](/reports/odw-reports/RP-88/) | 奈福泮的惊人心率 | [报告 98](/reports/odw-reports/RP-98/) | 金刚乙胺 |
+| [报告 89](/reports/odw-reports/RP-89/) | 个人trip整合-TBC | [报告 99](/reports/odw-reports/RP-99/) | 小畜生苯海索3 |
+
+### 报告 100-119
+
+| 编号 | 标题 | 编号 | 标题 |
+|------|------|------|------|
+| [报告 100](/reports/odw-reports/RP-100/) | 使用普瑞巴林的夜晚 | [报告 110](/reports/odw-reports/RP-110/) | 安非他酮鼻吸 |
+| [报告 101](/reports/odw-reports/RP-101/) | 普瑞巴林替代酒精 | [报告 111](/reports/odw-reports/RP-111/) | 普瑞也要玩连喷 |
+| [报告 102](/reports/odw-reports/RP-102/) | 苏糖酸镁加晚安 | [报告 112](/reports/odw-reports/RP-112/) | 失眠 |
+| [报告 103](/reports/odw-reports/RP-103/) | 苏糖酸镁加哌醋甲酯 | [报告 113](/reports/odw-reports/RP-113/) | 普瑞加酒 |
+| [报告 104](/reports/odw-reports/RP-104/) | 司来苯乙胺 | [报告 114](/reports/odw-reports/RP-114/) | 苏糖酸镁发力了 |
+| [报告 105](/reports/odw-reports/RP-105/) | 右美加普瑞 | [报告 115](/reports/odw-reports/RP-115/) | 梦无一例外，都是，噩梦 |
+| [报告 106](/reports/odw-reports/RP-106/) | 我只想至少像其他人一样地活着。希望这是我最后一次od | [报告 116](/reports/odw-reports/RP-116/) | 苏糖酸镁与晚安 |
+| [报告 107](/reports/odw-reports/RP-107/) | 路的终点是一个白光 | [报告 117](/reports/odw-reports/RP-117/) | 高度反解离 |
+| [报告 108](/reports/odw-reports/RP-108/) | 手搓右美变抗抑药 | [报告 118](/reports/odw-reports/RP-118/) | 现在我更痛苦了 |
+| [报告 109](/reports/odw-reports/RP-109/) | 吡拉西坦 | [报告 119](/reports/odw-reports/RP-119/) | 普瑞癫痫 |
+
+### 报告 120-151
+
+| 编号 | 标题 | 编号 | 标题 |
+|------|------|------|------|
+| [报告 120](/reports/odw-reports/RP-120/) | 声波震动 | [报告 136](/reports/odw-reports/RP-136/) | 五颜六色的大网 |
+| [报告 121](/reports/odw-reports/RP-121/) | 那是什么？ | [报告 137](/reports/odw-reports/RP-137/) | 恐惧之奈福泮 |
+| [报告 122](/reports/odw-reports/RP-122/) | 不真实 | [报告 138](/reports/odw-reports/RP-138/) | 反解离与解离 |
+| [报告 123](/reports/odw-reports/RP-123/) | 朦胧 | [报告 139](/reports/odw-reports/RP-139/) | 促智药物们 |
+| [报告 124](/reports/odw-reports/RP-124/) | 一次普瑞，一次奈福泮 | [报告 140](/reports/odw-reports/RP-140/) | 晚安的幻觉 |
+| [报告 125](/reports/odw-reports/RP-125/) | 你等会，多少克苏糖酸镁？？？ | [报告 141](/reports/odw-reports/RP-141/) | 把我认知被篡改的无法无天 |
+| [报告 126](/reports/odw-reports/RP-126/) | 唑吡坦新的世界观 | [报告 142](/reports/odw-reports/RP-142/) | 余晖犯了 |
+| [报告 127](/reports/odw-reports/RP-127/) | 那我可能出现了当天整整一天的幻觉 | [报告 143](/reports/odw-reports/RP-143/) | 佐匹克隆兴奋 |
+| [报告 128](/reports/odw-reports/RP-128/) | 友米纪录与苏糖酸镁 | [报告 144](/reports/odw-reports/RP-144/) | 心理与生理 |
+| [报告 129](/reports/odw-reports/RP-129/) | 佐匹克隆的梦游与兴奋 | [报告 145](/reports/odw-reports/RP-145/) | 晚安导致重症抑郁与重症人格解体 |
+| [报告 130](/reports/odw-reports/RP-130/) | 说我两个人格在互相争夺身体控制权 | [报告 146](/reports/odw-reports/RP-146/) | 杀害二氢可待因 |
+| [报告 131](/reports/odw-reports/RP-131/) | 捕人蛛 | [报告 147](/reports/odw-reports/RP-147/) | 100t右美 |
+| [报告 132](/reports/odw-reports/RP-132/) | 不理性 | [报告 148](/reports/odw-reports/RP-148/) | 饿一天吃16t普瑞 |
+| [报告 133](/reports/odw-reports/RP-133/) | 第五高原 | [报告 149](/reports/odw-reports/RP-149/) | 聊聊关于我和普瑞巴林的故事 |
+| [报告 134](/reports/odw-reports/RP-134/) | 毫无防备的进入了高原 | [报告 150](/reports/odw-reports/RP-150/) | 过量奈福泮导致三级高血压210/110 |
+| [报告 135](/reports/odw-reports/RP-135/) | 手持型自我装置 | [报告 151](/reports/odw-reports/RP-151/) | 茶氨酸自信 |
+
+---
+
+## 📖 如何使用本栏目
+
+1. **紧急情况** - 如果正在经历药物过量，请立即阅读 [紧急处理指南](/reports/emergency-overdose-treatment/)
+2. **浏览报告** - 在左侧菜单中选择具体报告，按数字顺序阅读用户分享的经验
+
+### ⚠️ 重要提示
+
+> **医学免责声明**
+>
+> 本栏目的所有内容仅供信息参考，不构成医学建议。在任何健康问题上，请始终咨询合格的医疗专业人员。
+>
+> 如遇生命危险的药物过量情况，请立即拨打紧急求助电话或前往最近的医疗机构。

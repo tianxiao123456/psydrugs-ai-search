@@ -1,0 +1,27 @@
+name: 恢复期护理
+title: 恢复期护理指南
+subtitle: "身心康复 | 重建生活"
+icon: /icons/healing.png
+cover: /icons/healing.png
+description: 恢复期健康管理、身心康复方案和长期生活调整。帮助您从困境中恢复，重建健康的生活方式。
+leftbar:
+  - tree
+  - recent
+rightbar:
+  - toc
+comment_title: "如有问题或建议，欢迎在评论区交流讨论。"
+comments:
+  service: false
+base_dir: /recovery/
+tree:
+  "恢复总览":
+    - index
+    - 恢复概述
+  "副作用介绍":
+    - acute_psychology_side_effect
+    - chronically_psychology_side_effect
+    - physiology_side_effect
+  "恢复方案":
+    - dxm_recovery
+    - pr_recovery
+    - amt_recovery

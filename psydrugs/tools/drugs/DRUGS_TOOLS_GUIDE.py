@@ -1,0 +1,191 @@
+#!/usr/bin/env python3
+"""
+使用说明: 三个drugs自动处理脚本的快速参考
+"""
+
+INSTRUCTIONS = """
+╔════════════════════════════════════════════════════════════════╗
+║           Psydrugs.icu - Drugs 自动处理工具                     ║
+║                    Quick Start Guide                           ║
+╚════════════════════════════════════════════════════════════════╝
+
+📋 脚本清单：
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1️⃣  auto_drugs.py (推荐)
+   ├─ 功能: 一键执行所有drugs相关处理
+   ├─ 命令: python3 tools/drugs/auto_drugs.py
+   └─ 耗时: ~1-2秒
+
+2️⃣  validate_drugs.py
+   ├─ 功能: 验证drugs文件的front-matter完整性
+   ├─ 命令: python3 tools/drugs/validate_drugs.py
+   └─ 耗时: <1秒
+
+3️⃣  generate_drugs_yml.py
+   ├─ 功能: 自动生成/更新drugs.yml配置
+   ├─ 命令: python3 tools/drugs/generate_drugs_yml.py
+   └─ 耗时: <1秒
+
+
+🚀 快速开始：
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Step 1: 进入项目目录
+$ cd /home/krvy/Psydrugs.icu
+
+Step 2: 执行综合脚本（推荐）
+$ python3 tools/drugs/auto_drugs.py
+
+Step 3: 重新生成网站（可选）
+$ hexo clean && hexo generate
+
+Step 4: 本地预览（可选）
+$ hexo server
+# 访问 http://localhost:4000
+
+
+📊 功能详解：
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+┌─ validate_drugs.py ─────────────────────────────────────────┐
+│                                                               │
+│ ✓ 检查所有drugs文件的YAML front-matter                       │
+│ ✓ 统计已有/缺少front-matter的文件                           │
+│ ✓ 自动修复缺少的front-matter                               │
+│ ✓ 生成验证报告                                             │
+│                                                               │
+│ 输出示例：                                                  │
+│   === Drugs 文件验证报告 ===                                │
+│   总文件数: 56                                             │
+│   已有front-matter: 56                                     │
+│   缺少front-matter: 0                                      │
+│   新增front-matter: 0                                      │
+│   ✓ 所有drugs文件验证完毕，无问题                         │
+└─────────────────────────────────────────────────────────────┘
+
+┌─ generate_drugs_yml.py ─────────────────────────────────────┐
+│                                                               │
+│ ✓ 扫描source/drugs/下的所有.md文件                          │
+│ ✓ 按字母顺序排序                                           │
+│ ✓ 自动备份原drugs.yml文件                                  │
+│ ✓ 生成新的drugs.yml配置                                   │
+│                                                               │
+│ 输出示例：                                                  │
+│   已备份原文件到: source/_data/wiki/drugs.yml.backup       │
+│   ✓ 已更新 source/_data/wiki/drugs.yml                    │
+│   ✓ 包含 55 个药物条目                                    │
+│   前10个药物:                                              │
+│     - ACL  - ADD  - AES  - AMs  - ARP                     │
+│     - ASP  - ATD  - BCF  - BPP  - BZD                     │
+└─────────────────────────────────────────────────────────────┘
+
+┌─ auto_drugs.py ─────────────────────────────────────────────┐
+│                                                               │
+│ ✓ 显示当前drugs统计信息                                    │
+│ ✓ 运行validate_drugs.py验证文件                            │
+│ ✓ 运行generate_drugs_yml.py更新配置                        │
+│ ✓ 提供完成摘要和下一步建议                                │
+│                                                               │
+│ 一键执行以上所有功能 ✨                                    │
+└─────────────────────────────────────────────────────────────┘
+
+
+💡 常见用途：
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. 添加新药物后：
+   $ python3 tools/drugs/auto_drugs.py
+
+2. 修改drugs文件名后：
+   $ python3 tools/drugs/generate_drugs_yml.py
+
+3. 检查drugs文件完整性：
+   $ python3 tools/drugs/validate_drugs.py
+
+4. 所有维护工作（推荐）：
+   $ python3 tools/drugs/auto_drugs.py
+
+
+🔄 工作流程：
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+新增药物文件:
+  1. 创建 source/drugs/新药物.md
+ 2. 运行 python3 tools/drugs/auto_drugs.py
+  3. 运行 hexo generate
+  4. 查看效果
+
+修改现有药物:
+  1. 编辑 source/drugs/药物.md
+ 2. 如果改了文件名，运行 python3 tools/drugs/auto_drugs.py
+  3. 运行 hexo server 预览
+
+批量操作:
+ 1. 批量修改/新增文件
+ 2. 运行 python3 tools/drugs/auto_drugs.py
+ 3. hexo clean && hexo generate
+
+
+📂 文件位置：
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+脚本 (tools/drugs/):
+   • auto_drugs.py           ← 综合脚本（推荐使用）
+   • validate_drugs.py       ← 验证脚本
+   • generate_drugs_yml.py   ← 配置生成脚本
+
+配置:
+   • source/_data/wiki/drugs.yml           ← 导航配置
+   • backups/drugs.yml.backup              ← 自动备份
+
+药物文件:
+  • source/drugs/*.md       ← 所有药物文档（56个）
+  • source/drugs/*/        ← 药物子目录（8个）
+
+
+⚙️ 环境要求：
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ Python 3.6+
+✓ 标准库（os, re, subprocess, datetime）
+✗ 无需第三方依赖
+
+
+❓ 常见问题：
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Q: 脚本找不到文件怎么办？
+A: 确保在项目根目录运行：
+   $ cd /home/krvy/Psydrugs.icu
+   $ python3 tools/drugs/auto_drugs.py
+
+Q: drugs.yml没有更新？
+A: 检查source/drugs/中是否有新文件，或手动重试
+
+Q: 网站不显示新药物？
+A: 运行以下命令：
+   $ hexo clean && hexo generate && hexo server
+
+Q: 如何恢复原配置？
+A: 使用备份文件：
+   $ cp backups/drugs.yml.backup source/_data/wiki/drugs.yml
+
+
+✨ 统计信息：
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  总药物文件: 56
+  药物子目录: 8 (DXM, RPD, DPH, MGT, DHCDI, ATD, TAN, PR)
+  配置文件:   1 (drugs.yml)
+   脚本文件:   3 (tools/drugs/auto_drugs.py, tools/drugs/validate_drugs.py, tools/drugs/generate_drugs_yml.py)
+  
+
+📞 需要帮助？
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+查看详细文档: DRUGS_AUTO_TOOLS_README.md
+"""
+
+if __name__ == '__main__':
+    print(INSTRUCTIONS)

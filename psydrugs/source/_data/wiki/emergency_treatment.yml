@@ -1,0 +1,29 @@
+name: 紧急处理
+title: 药物过量急救指南
+subtitle: '识别症状 | 快速应对 | 拯救生命'
+icon: /icons/first-aid.png
+cover: /icons/first-aid.png
+description: 药物过量（OD）的紧急处理流程、常见物质的过量表现、危险信号识别和减害建议。包括紧急救护步骤、毒物中心资源和事前预防措施。
+leftbar:
+  - tree
+  - recent
+rightbar:
+  - toc
+comment_title: '如有问题或建议，欢迎在评论区交流讨论。'
+comments:
+  service: false
+base_dir: /emergency_treatment/
+tree:
+  - index
+  - overdose-signs
+  - substance-specific
+  - benzodiazepine-overdose
+  - harm-reduction
+  - 苯二氮卓
+  - 阿片
+  - 对乙酰氨基酚
+  - 癫痫
+  - 药物滥用导致心率过速的应对方案
+  - 药物滥用导致急性高血压的应对方案
+  - 药物滥用所致幻觉的反制策略
+  - 血清素综合征的反制策略
