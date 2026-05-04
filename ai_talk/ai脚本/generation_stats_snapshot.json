@@ -1,0 +1,12 @@
+{
+  "generated_files": {},
+  "generated_total_valid": 0,
+  "generated_total_invalid_lines": 0,
+  "generated_file_count": 0,
+  "updated_at": "2026-05-05T01:55:25",
+  "reference": {
+    "reference_path": "ai_talk\\药理.jsonl",
+    "reference_valid": 64,
+    "reference_invalid": 0
+  }
+}
