@@ -8,6 +8,9 @@ ai_talk/ai脚本/__pycache__/
 .env
 data/chroma/
 ai_search/__pycache__/
+cf-worker/node_modules/
+cf-worker/.wrangler/
+cf-worker/vectors.ndjson
 node_modules/
 public/
 .deploy*/

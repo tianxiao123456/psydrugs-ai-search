@@ -1,0 +1,21 @@
+name = "psydrugs-search"
+main = "src/index.ts"
+compatibility_date = "2024-11-01"
+
+# 创建索引（首次）:
+#   npx wrangler vectorize create psydrugs-wiki --dimensions=1536 --metric=cosine
+# 构建并写入向量:
+#   npm run build-index
+#   npm run insert-vectors
+# 部署:
+#   npx wrangler secret put OPENAI_API_KEY
+#   npm run deploy
+
+[[vectorize]]
+binding = "VECTORIZE"
+index_name = "psydrugs-wiki"
+
+[vars]
+OPENAI_BASE_URL = "https://api.deepseek.com/v1"
+EMBEDDING_MODEL = "text-embedding-3-small"
+CHAT_MODEL = "deepseek-chat"

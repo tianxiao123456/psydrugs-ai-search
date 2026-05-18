@@ -4,11 +4,11 @@ date: 2026-05-03
 layout: page
 cover: https://gcore.jsdelivr.net/gh/cdn-x/xaoxuu@main/posts/20250706150531375.jpg
 ---
-# DeepSeek 智能搜索
+# AI 智能搜索（RAG）
 
 <div class="deepseek-search-wrap">
   <div style="margin-bottom: 18px;">
-    <h4>在全站内容中使用 AI 语义搜索。当前模型：DeepSeek API（deepseek-chat）</h4>
+    <h4>基于本站 wiki 向量检索 + 大模型回答。API Key 保存在服务器端，不会暴露在浏览器中。</h4>
   </div>
 
   <div class="deepseek-search-panel">
@@ -16,7 +16,7 @@ cover: https://gcore.jsdelivr.net/gh/cdn-x/xaoxuu@main/posts/20250706150531375.j
       <input
         id="deepseek-query"
         type="text"
-        placeholder="输入问题或关键词，例如：右美沙芬的用法、苯二氮卓的风险..."
+        placeholder="例如：查一下关于文拉法辛的报告"
       />
       <button id="deepseek-search-button">搜索</button>
     </div>
@@ -26,9 +26,8 @@ cover: https://gcore.jsdelivr.net/gh/cdn-x/xaoxuu@main/posts/20250706150531375.j
   <div id="deepseek-results" style="min-height: 100px;"></div>
 </div>
 
+<!-- Cloudflare Worker 部署后的地址，例如 https://psydrugs-search.<你的子域>.workers.dev -->
 <script
-  src="/js/deepseek-search.js"
-  data-api-key="sk-2f15bf1d72444fefb8456932c7c70534"
-  data-api-host="https://api.deepseek.com/v1/chat/completions"
-  data-model="deepseek-chat"
+  src="/js/rag-search.js"
+  data-rag-api="https://psydrugs-search.tianxiao0502000.workers.dev"
 ></script>
