@@ -40,7 +40,7 @@ logo:
 
 # 侧边栏主功能导航菜单
 menubar:
-  columns: 4 # 一行多少个
+  columns: 5 # 一行多少个
   items: # 可按照自己需求增加，符合以下格式即可
     - id: drugs
       theme: "#1BCDFC"
@@ -63,9 +63,9 @@ menubar:
       title: 恢复
       url: /recovery/
     - id: search
-      theme: "#9C27B0"
+      theme: "#4285F4"
       icon: /icons/ai_search.png
-      title: AI 搜索
+      title: AI搜索
       url: /search/
     # id: 页面中高亮的 menu_id
     # theme: 高亮时的颜色，仅 svg 中 fill="currentColor" 时有效
@@ -111,6 +111,7 @@ site_tree:
       "药物效果": /effects/
       "文档演示": https://generator.psydrugs.org/
       "贡献者": /contributors/
+      "AI 搜索": /search/
   # 博客专栏列表页配置
   index_topic:
     base_dir: topic # 只影响自动生成的页面路径
@@ -125,6 +126,7 @@ site_tree:
       "药物效果": /effects/
       "文档演示": https://generator.psydrugs.org/
       "贡献者": /contributors/
+      "AI 搜索": /search/
   # -- 内容类页面 -- #
   # 博客文章内页配置
   post:
