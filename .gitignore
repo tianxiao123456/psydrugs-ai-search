@@ -5,6 +5,9 @@ db.json
 ai_talk/ai脚本/cloud.env
 ai_talk/ai脚本/__pycache__/
 .cache/
+.env
+data/chroma/
+ai_search/__pycache__/
 node_modules/
 public/
 .deploy*/

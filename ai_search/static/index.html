@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Psydrugs AI 搜索</title>
+  <style>
+    :root {
+      --bg: #0f1419;
+      --panel: #1a2332;
+      --border: #2d3a4f;
+      --text: #e7ecf3;
+      --muted: #9aa8bc;
+      --accent: #3b82f6;
+      --accent-hover: #60a5fa;
+      --ok: #4ade80;
+      --err: #f87171;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .wrap { max-width: 880px; margin: 0 auto; padding: 24px 16px 48px; }
+    h1 { font-size: 1.35rem; font-weight: 600; margin: 0 0 6px; }
+    .sub { color: var(--muted); font-size: 0.9rem; margin-bottom: 20px; }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+    .row { display: flex; gap: 10px; }
+    #query {
+      flex: 1;
+      padding: 12px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--text);
+      font-size: 15px;
+    }
+    #query:focus { outline: 2px solid var(--accent); border-color: transparent; }
+    button {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    button:hover { background: var(--accent-hover); }
+    button:disabled { opacity: 0.55; cursor: not-allowed; }
+    #status { min-height: 1.4em; font-size: 0.88rem; color: var(--muted); margin-top: 10px; }
+    #status.err { color: var(--err); }
+    #status.ok { color: var(--ok); }
+    .answer { white-space: pre-wrap; font-size: 0.95rem; }
+    .sources h3 { font-size: 0.95rem; margin: 0 0 10px; color: var(--muted); }
+    .src-item {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 12px;
+      margin-bottom: 8px;
+      font-size: 0.85rem;
+    }
+    .src-item strong { color: var(--accent-hover); }
+    .src-snippet { color: var(--muted); margin-top: 6px; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Psydrugs AI 搜索</h1>
+    <p class="sub">输入问题 → 向量检索 wiki 片段 → 大模型基于片段作答</p>
+
+    <div class="panel">
+      <div class="row">
+        <input id="query" type="text" placeholder="例如：查一下关于文拉法辛的报告" autocomplete="off" />
+        <button id="btn" type="button">搜索</button>
+      </div>
+      <div id="status"></div>
+    </div>
+
+    <div id="answer-panel" class="panel hidden">
+      <h2 style="font-size:1rem;margin:0 0 12px;">回答</h2>
+      <div id="answer" class="answer"></div>
+    </div>
+
+    <div id="sources-panel" class="panel sources hidden">
+      <h3>参考片段（向量检索 top 结果）</h3>
+      <div id="sources"></div>
+    </div>
+  </div>
+
+  <script>
+    const $ = (id) => document.getElementById(id);
+
+    function setStatus(msg, isError) {
+      const el = $("status");
+      el.textContent = msg;
+      el.className = isError ? "err" : msg ? "ok" : "";
+    }
+
+    async function onAsk() {
+      const q = $("query").value.trim();
+      if (!q) {
+        setStatus("请输入问题", true);
+        return;
+      }
+      $("btn").disabled = true;
+      $("answer-panel").classList.add("hidden");
+      $("sources-panel").classList.add("hidden");
+      setStatus("正在检索向量库并调用大模型…", false);
+
+      try {
+        const res = await fetch("/api/search", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ query: q, top_k: 5 }),
+        });
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok) {
+          throw new Error(data.detail || res.statusText || "请求失败");
+        }
+
+        $("answer").textContent = data.answer || "（无回答）";
+        $("answer-panel").classList.remove("hidden");
+
+        const box = $("sources");
+        box.innerHTML = "";
+        (data.sources || []).forEach((s) => {
+          const el = document.createElement("div");
+          el.className = "src-item";
+          el.innerHTML =
+            "<strong>片段" + s.index + "</strong> · " +
+            escapeHtml(s.title || "") + "<br><code>" +
+            escapeHtml(s.source_path || "") + "</code>" +
+            (s.distance != null ? " · 距离 " + Number(s.distance).toFixed(4) : "") +
+            '<div class="src-snippet">' + escapeHtml(s.snippet || "") + "</div>";
+          box.appendChild(el);
+        });
+        if (data.sources && data.sources.length) {
+          $("sources-panel").classList.remove("hidden");
+        }
+        setStatus("完成（检索 " + (data.sources || []).length + " 条片段）", false);
+      } catch (e) {
+        console.error(e);
+        setStatus(e.message || String(e), true);
+      } finally {
+        $("btn").disabled = false;
+      }
+    }
+
+    function escapeHtml(s) {
+      return s
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    $("btn").addEventListener("click", onAsk);
+    $("query").addEventListener("keydown", (e) => {
+      if (e.key === "Enter") onAsk();
+    });
+  </script>
+</body>
+</html>
